@@ -1,3 +1,10 @@
+/**
+    Title: Auth.js
+    Author: Javascript Mastery
+    Modified by: Keith Hall
+    Date: 05/30/2023
+    Description: Channel container.
+*/
 import React from 'react';
 import { Channel, MessageSimple } from 'stream-chat-react';
 
@@ -11,7 +18,6 @@ const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, 
             </div>
         )
     }
-
     if(isEditing) {
         return (
             <div className="channel__container">
@@ -19,14 +25,12 @@ const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, 
             </div> 
         )
     }
-
     const EmptyState = () => (
         <div className="channel-empty__container">
             <p className="channel-empty__first">This is the beginning of your chat history.</p>
             <p className="channel-empty__second">Send messages, attachments, links, emojis, and more!</p>
         </div>
     )
-
     return (
         <div className=" channel__container">
             <Channel
