@@ -1,3 +1,10 @@
+/**
+    Title: Auth.js
+    Author: Javascript Mastery
+    Modified by: Keith Hall
+    Date: 05/30/2023
+    Description: Auth for sign in and sign up.
+*/
 import React, { useState } from 'react';
 import Cookies from 'universal-cookie';
 import axios from 'axios';
